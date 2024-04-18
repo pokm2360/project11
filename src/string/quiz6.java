@@ -7,16 +7,16 @@ public class quiz6 {
 	public static void main(String[] args) {
 		
 		Scanner scanner = new Scanner(System.in);
-		String str = scanner.nextLine();
 		
 		int i = 0;
 		while (i>=0) {
-			System.out.println("문장을 입력하세요:");
-			i++;
+			System.out.print("문장을 입력하세요:");
+			String str = scanner.nextLine();
+			
+			if (str.equals("end") || str.equals("END")) {
+				break;
+			}
 		}
-//		while(str == "END" || str == "end") {
-//			break;
-//		}
 	}
 
 }
